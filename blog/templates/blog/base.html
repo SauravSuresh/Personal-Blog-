@@ -10,8 +10,64 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
   <meta charset="utf-8">
+
+  <style>
+    body {
+      padding: 2% 1%;
+      background-color: #eaf4f4;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .container-fluid {
+      text-align: center;
+    }
+
+    #pfp {
+      width: 15em;
+      height: 15em;
+      border-radius: 100%;
+    }
+
+    h1 {
+      padding-left: 10%;
+      text-align: justify;
+      font-family: 'Montserrat' !important;
+
+    }
+
+    p {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      text-align: left;
+      padding-left: 10%;
+
+    }
+
+    .hi {
+      border-color: red;
+      margin-top: 2%;
+      padding: 10%;
+      border-radius: 25px;
+      margin-bottom: 10%;
+      background-color: white;
+    }
+
+    .ainte {
+      text-align: center;
+    }
+
+    .workexpcarousel {
+      background-color: #fff1e6;
+      padding: 10%;
+      border-radius: 25px;
+    }
+  </style>
+
+
   <title> </title>
 
 </head>
@@ -22,12 +78,12 @@
       <img src="https://media-exp1.licdn.com/dms/image/C5603AQE7RQuihhllbQ/profile-displayphoto-shrink_400_400/0?e=1606953600&v=beta&t=ytDoYrWwg4MAG7_GHQltLfB_SkP1izLxkJRNvjKKs7U" alt="pfp" style="width:2em; height :2em; border-radius :100%;">
     </a>
     <a href="https://www.instagram.com/leggolebowski/" class="navbar-brand">
-    <i class="fa fa-instagram" style="font-size:24px"></i>
+      <i class="fa fa-instagram" style="font-size:24px"></i>
     </a>
     <a href="twitter.com/leggolebowski">
       <i class="fa fa-twitter" style="font-size:24px"></i>
     </a>
-    
+
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
         <a class="nav-link" href="{%url 'post_list'%}">Posts</a>
