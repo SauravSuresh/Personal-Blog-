@@ -27,7 +27,7 @@ SECRET_KEY = '9^+9x+9&47u6e8z6e2$ok9jqjd4$1m90t-&g$m&2-sw&x1#s!1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['leggoblog.herokuapp.com']
 
 
 # Application definition
