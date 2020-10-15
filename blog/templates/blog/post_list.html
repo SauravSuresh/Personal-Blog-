@@ -1,0 +1,36 @@
+{%extends 'blog/base.html'%}
+
+{% block content%}
+
+<div class="container-fluid">
+  {%for post in post_list%}
+
+  <div class="card border-0 shadow my-5" style="padding:1em; margin:1em;">
+
+    <div class="card-body">
+      <div style="display: flex;">
+        <div style="display: flex:1;">
+          <h5 class="card-title"><a href="{%url 'post_detail' pk=post.pk %}">{{post.title}}</a></h5>
+          <p class="card-text">{{post.author}}</p>
+          <p class="card-text">{{post.published_date}}</p>
+          <p class="card-text"><a href="{%url 'post_detail' pk=post.pk %}">comments :{{post.comments.approve_commments.count}}</a></p>
+          <a href="#" class="btn btn-primary">Read Now</a>
+        </div>
+        <div style="display : flex:1;">
+          <div style={width:1em;display:inline block;}>
+
+          </div>
+          <p>  Read More : {{post.text|safe|truncatechars:50}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
+  {%endfor%}
+
+</div>
+
+{% endblock %}

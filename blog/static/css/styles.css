@@ -1,0 +1,53 @@
+body{
+  padding: 2% 1%;
+  background-color: #eaf4f4;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container-fluid{
+  text-align: center;
+}
+
+#pfp{
+  width: 15em;
+  height: 15em;
+  border-radius: 100%;
+}
+
+h1{
+  padding-left: 10%;
+  text-align: justify;
+  font-family: 'Montserrat'!important;
+
+}
+
+p{
+  font-family: 'Montserrat', sans-serif;
+  font-weight:400;
+  text-align: left;
+  padding-left: 10%;
+
+}
+
+
+.hi{
+  border-color: red;
+  margin-top: 2%;
+  padding: 10%;
+  border-radius: 25px;
+  margin-bottom: 10%;
+  background-color: white;
+}
+
+.ainte{
+  text-align: center;
+}
+
+.workexpcarousel{
+  background-color: #fff1e6;
+  padding: 10%;
+  border-radius: 25px;
+}
