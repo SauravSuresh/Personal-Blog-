@@ -40,6 +40,11 @@
           <p>by</p>
           <p><em>{{comment.author}}</em></p>
           {%endif%}
+          {%for comment in post.comments.approved_comments%}
+          <p>{{comment.text|safe|linebreaks}}</p>
+          <p>by</p>
+          <p><em>{{comment.author}}</em></p>
+          {%endfor%}
           {%endfor%}
 
       </div>
